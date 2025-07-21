@@ -54,8 +54,9 @@ def user_input(user_question):
     model = genai.GenerativeModel("gemini-2.5-flash")
 
     prompt = f"""
-    Answer the following question based only on the provided context.
-    If the answer is not in the context, just say "Answer not found in the context."
+    You are a helpful assistant. Use the following context to answer the question **in your own words**.
+    Do **not copy** the answer directly from the context. **Summarize and refine** the relevant information.
+    If the answer is not present in the context, reply with: "Answer not found in the context."
 
     Context:
     {context}
