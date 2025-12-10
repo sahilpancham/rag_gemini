@@ -10,7 +10,7 @@ import google.generativeai as genai
 
 
 
-GOOGLE_API_KEY="AIzaSyBXn6ZteZSsARNFPQGRS8a3z1vnPExW-KM"
+GOOGLE_API_KEY=""
 
 
 genai.configure(api_key=GOOGLE_API_KEY)
@@ -90,3 +90,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
